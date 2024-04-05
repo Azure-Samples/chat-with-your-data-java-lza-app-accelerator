@@ -25,12 +25,12 @@ hooks:
     preprovision:
         posix:
           shell: sh
-          run: ./scripts/download-aca-internal-lza.sh --branch feat/openai-chat-java
+          run: ./scripts/download-aca-internal-lza.sh --branch main
           interactive: true
           continueOnError: false
         windows:
           shell: pwsh
-          run: ./scripts/download-aca-internal-lza.ps1 -branch feat/openai-chat-java
+          run: ./scripts/download-aca-internal-lza.ps1 -branch main
           interactive: true
           continueOnError: false 
     postrestore:
